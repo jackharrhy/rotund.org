@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import rotund from "../assets/rotund.png";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>rotund.org</title>
+  </head>
+  <body>
+    <h1>rotund.org</h1>
+    <Image src={rotund} alt="rotund" />
+  </body>
+</html>
+
+<style>
+  * {
+    font-family: sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+</style>
